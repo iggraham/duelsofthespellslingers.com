@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+    /* Font details */
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.main_tabs {
+    display: flex;
+    flex-wrap: wrap;
+     padding: 10px;
+ }
+.main_tabs input[type="radio"] {
+    display: none;
+}
+.main_tabs label {
+    padding: 15px;
+    background: #352637;
+    font-weight: bold;
+}
+
+.main_tabs .tab {
+    width: 100%;
+    order: 1;
+    display: none;
+    background-image: url("Galaxy_portrait.png");
+
+    /* Full height */
+    height: 1080px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+ 
+    padding: 20px;
+}
+
+.main_tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.main_tabs input[type="radio"]:checked + label {
+    background: #5C4260
+}
+
+p.about {
+    max-width: 80ch;
+}

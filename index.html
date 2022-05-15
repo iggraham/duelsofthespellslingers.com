@@ -2,55 +2,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Windows 8.1 + IE11 and above -->
+  <meta name="msapplication-config" content="browserconfig.xml">
 
-<title>Duels of the Spellslingers Bracket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="site.webmanifest">
 
-<!-- generic favicons -->
-<link rel="icon" href="favicon_io/favicon-16x16.png" sizes="16x16">
-<link rel="icon" href="favicon_io/favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="favicon.ico" sizes="48x48">
+  <!-- generic favourites icons -->
+  <link rel="icon" href="favicon_io/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" href="favicon_io/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
 
-<!-- iOS favicons -->
-<link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" sizes="180x180">
+  <!-- iOS favourites icons -->
+  <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" sizes="180x180">
 
-<!-- Android favicons -->
-<link rel="shortcut icon" href="favicon_io/android-chrome-192x192.png" sizes="192x192">
-<link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" sizes="512x512">
+  <!-- Android favourites icons -->
+  <link rel="shortcut icon" href="favicon_io/android-chrome-192x192.png" sizes="192x192">
+  <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" sizes="512x512">
 
-<!-- Windows 8.1 + IE11 and above -->
-<meta name="msapplication-config" content="browserconfig.xml">
+  <link rel="stylesheet" href="style.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  /* The main image used */
-  background-image: url("Galaxy_portrait.png");
-
-  /* Full height */
-  height: 1080; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000000;
-}
-</style>
-
+  <title>Duels of the Spellslingers</title>
 </head>
+
 <body>
 
-<div class="bg">
-<iframe src="https://duelsofthespellslingers.challonge.com/duelsofthespellslingers_4/module?theme=8045&show_tournament_name=1&show_final_results=1" width="100%" height="1080" frameborder="0" scrolling="auto" allowtransparency="true"></iframe></div>
+  <div class="main_tabs">
+    <input type="radio" id="current_tourney_tab" name="main_tabs" checked="checked">
+    <label for="current_tourney_tab">Tournament 4</label>
+    <div class="tab">
+      <iframe src="https://duelsofthespellslingers.challonge.com/duelsofthespellslingers_4/module?theme=8045&show_final_results=1" width="100%" height="950" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
 
+    <input type="radio" id="previous_tourney_tab" name="main_tabs">
+    <label for="previous_tourney_tab">Tournament 3</label>
+    <div class="tab">
+      <iframe src="https://duelsofthespellslingers.challonge.com/duelsofthespellslingers_3/module?theme=8045&show_final_results=1" width="100%" height="950" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+
+    <input type="radio" id="older_tourney_tab" name="main_tabs">
+    <label for="older_tourney_tab">Prior Tournaments</label>
+    <div class="tab">
+      <h2>Prior Tournaments</h2>
+    </div>
+
+    <input type="radio" id="about_tab" name="main_tabs">
+    <label for="about_tab">About</label>
+    <div class="tab">
+      <h2>About</h2>
+      <p class="about">Duels of the Spellslingers is a group of enthusiasts of the game
+        Magic Spellslingers from Wizards of the Coast.  We organize regular
+        fun tournaments for which we record the games and publish commentated
+        videos of the tournament matches.  Anyone is welcome!  Find us on Discord.</p>
+  </div>
+
+ </div>
 
 </body>
 </html>
