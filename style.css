@@ -49,3 +49,30 @@ body, html {
 p.about {
     max-width: 80ch;
 }
+
+#social-media-list, #social-media-list p, #social-media-list h3 {
+    list-style: none;
+    margin:20; padding:0;
+}
+    
+#social-media-list > li{
+    float:left;
+    margin-right: 20px;
+    width: 80ch;
+}
+
+#social-media-list > li > .image{
+    display:block;
+    float:left;
+    margin-right:10px;
+}
+
+/*
+this instructions are to force the dimensions of image and its container <a>
+*/
+#social-media-list > li > .image,
+#social-media-list > li > .image > img{
+    width:64px;
+}
+    
+  
