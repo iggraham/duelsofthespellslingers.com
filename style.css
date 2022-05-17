@@ -24,13 +24,13 @@ body, html {
     width: 100%;
     order: 1;
     display: none;
-    background-image: url("Galaxy_portrait.png");
+    background-image: url("Duels_landscape_upper_right_10.jpg");
 
     /* Full height */
-    height: 1080px; 
+    height: 950px; 
 
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
