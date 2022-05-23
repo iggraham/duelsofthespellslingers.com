@@ -6,10 +6,24 @@ body, html {
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+.bg {
+    /* The main image used */
+    background-image: url("Duels_landscape_upper_right_10.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+  }
+
 .main_tabs {
     display: flex;
     flex-wrap: wrap;
-     padding: 10px;
+    padding-left: 10px;
  }
 .main_tabs input[type="radio"] {
     display: none;
@@ -24,16 +38,6 @@ body, html {
     width: 100%;
     order: 1;
     display: none;
-    background-image: url("Duels_landscape_upper_right_10.jpg");
-
-    /* Full height */
-    height: 950px; 
-
-    /* Center and scale the image nicely */
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
  
     padding: 20px;
 }
