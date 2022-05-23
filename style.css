@@ -13,17 +13,19 @@ body, html {
     /* Full height */
     height: 100%; 
   
-    /* Center and scale the image nicely */
-    background-position: center;
+    /* Align and scale the image nicely */
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
+
+    overflow: scroll;
   }
 
 .main_tabs {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
+    padding-left: 20px;
  }
 .main_tabs input[type="radio"] {
     display: none;
@@ -39,7 +41,7 @@ body, html {
     order: 1;
     display: none;
  
-    padding: 20px;
+    padding-right: 20px;
 }
 
 .main_tabs input[type="radio"]:checked + label + .tab {
