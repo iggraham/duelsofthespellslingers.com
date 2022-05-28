@@ -73,12 +73,34 @@ p {
     margin-right:10px;
 }
 
-/*
-this instructions are to force the dimensions of image and its container <a>
-*/
+/* these instructions are to force the dimensions of image and its container <a> */
 #social-media-list > li > .image,
 #social-media-list > li > .image > img{
     width:64px;
 }
-    
+
+/* Need links to show up somehow on our dark purple background. */
+a:link {
+    color: lawngreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
   
