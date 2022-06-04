@@ -3,8 +3,11 @@ body, html {
     margin: 0;
     background-color: #000;
     /* Font details */
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #ddd;
 }
 .bg {
     /* The main image used */
@@ -21,6 +24,16 @@ body, html {
 
     overflow: scroll;
   }
+
+/* Colourize headers */
+.tourney {
+    text-align: center;
+    text-shadow: 2px 2px 10px #D316AD;
+}
+
+h2,h3 {
+    text-shadow: 2px 2px 10px #a2a203;
+}
 
 .main_tabs {
     display: flex;
@@ -41,7 +54,7 @@ body, html {
     order: 1;
     display: none;
  
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .main_tabs input[type="radio"]:checked + label + .tab {
@@ -52,11 +65,28 @@ body, html {
     background: #5C4260
 }
 
+.text_tab {
+    /* max-width: 80ch; doesn't work because if browser wide, text_tab slips out from tab buttons */
+    margin: 0 auto;
+    padding: 0px 20px;
+
+    /* below roughly matches current Challonge iframe styles */
+    border-style: solid;
+    border-color: #999;
+    border-right-color: #ddd;
+    border-bottom-color: #ddd;
+    border-width: 2px;
+}
+
 p {
     max-width: 80ch;
 }
 
-#social-media-list, #social-media-list p, #social-media-list h3 {
+.link_text {
+    padding-top: 8px;
+}
+
+#social-media-list, #social-media-list p, #social-media-list {
     list-style: none;
     margin:20; padding:0;
 }
@@ -64,7 +94,11 @@ p {
 #social-media-list > li{
     float:left;
     margin-right: 20px;
-    width: 80ch;
+    width: 80%;
+}
+
+#social-media-list > li > .image:hover {
+    background-color: #ddd;
 }
 
 #social-media-list > li > .image{
@@ -81,25 +115,25 @@ p {
 
 /* Need links to show up somehow on our dark purple background. */
 a:link {
-    color: lawngreen;
+    color: #EDEB03;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: pink;
+    color: #D8D803;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: red;
+    color: yellow;
     background-color: transparent;
     text-decoration: underline;
 }
 
 a:active {
-    color: yellow;
+    color: #D316AD;
     background-color: transparent;
     text-decoration: underline;
 }
