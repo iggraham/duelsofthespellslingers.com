@@ -45,15 +45,18 @@ h2,h3 {
 }
 .main_tabs label {
     padding: 15px;
-    background: #352637;
-    font-weight: bold;
+    background: hsl(292, 18%, 18%);
+    font-weight: bolder;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.main_tabs label:hover {
+    background: hsl(292, 18%, 21%);
 }
 
 .main_tabs .tab {
     width: 100%;
     order: 1;
     display: none;
- 
     margin-right: 20px;
 }
 
@@ -62,7 +65,10 @@ h2,h3 {
 }
 
 .main_tabs input[type="radio"]:checked + label {
-    background: #5C4260
+    background: hsl(292, 18%, 32%);
+}
+.main_tabs input[type="radio"]:checked:hover + label {
+    background: hsl(292, 18%, 35%);
 }
 
 .text_tab {
@@ -98,7 +104,8 @@ p {
 }
 
 #social-media-list > li > .image:hover {
-    background-color: #ddd;
+    background-color: #ddd; 
+    border-radius: 0.25rem;
 }
 
 #social-media-list > li > .image{
